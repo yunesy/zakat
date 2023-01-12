@@ -1,0 +1,13 @@
+# Establecer el Nisab en gramos de oro o plata
+nisab = 85 # 85 gramos de oro
+# nisab = 595 # 595 gramos de plata
+
+# Solicitar la cantidad de riqueza del usuario en euros
+riqueza = float(input("Ingresa tu cantidad de riqueza en euros: "))
+
+# Calcular el Azaque si el usuario tiene más del Nisab
+if riqueza > nisab:
+    azaque = riqueza * 0.025 # El Azaque es el 2.5% de la riqueza
+    print("Tu Azaque anual es de: €" + str(azaque))
+else:
+    print("Tu riqueza es menor al Nisab, no es necesario pagar Azaque en este momento.")
